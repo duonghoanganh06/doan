@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  /* font-family: Helvetica, Arial, sans-serif; */
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'left right';
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 10rem 1fr;
+  height: 100%;
+}
+.header {
+  grid-area: header;
+  background-color: #203040;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+  background-color: #4b98e6;
+}
+table{
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+}
